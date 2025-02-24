@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI for Disease Detection</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background: url('back1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            overflow-x: hidden;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container {
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.8);
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 1200px;
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.5);
+            text-align: center;
+        }
+
+        .section {
+            font-size: 1.8em;
+            margin: 20px 0;
+            font-weight: bold;
+            text-shadow: 0 0 5px rgba(0, 255, 255, 0.8);
+        }
+
+        .instructions {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #ddd;
+        }
+
+        .upload-container {
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 10px auto;
+            font-size: 1.2em;
+        }
+
+        .checkbox-group {
+            margin-top: 20px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #007BFF, #00e1ff);
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 15px rgba(0, 225, 255, 0.7);
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgba(0, 225, 255, 1);
+        }
+
+        .result-container {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            min-height: 50px;
+            font-size: 1.5em;
+            color: #0ff;
+            text-shadow: 0 0 10px #0ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">X-ray Image Submission</div>
+        <div class="instructions">Upload an X-ray image and select the disease type you want the AI to analyze. Click submit to get results.</div>
+        <div class="upload-container">
+            <input type="file" accept="image/*">
+            <div class="checkbox-group">
+                <label><input type="radio" name="disease"> Tuberculosis</label><br>
+                <label><input type="radio" name="disease"> Cancer</label><br>
+                <label><input type="radio" name="disease"> Pneumonia</label>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="#" class="btn">Submit</a>
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+        <div class="result-container">Results will appear here...</div>
+    </div>
+</body>
+</html>
